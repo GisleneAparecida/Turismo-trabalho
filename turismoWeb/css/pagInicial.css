@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+header {
+    background-color: #003366;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header h1 {
+    margin: 0;
+}
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+    .banner {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Congresso_Nacional_-_Bras%C3%ADlia.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px #000;
+}
+.banner h2 {
+    font-size: 3rem;
+    background: rgba(0,0,0,0.5);
+    padding: 1rem;
+    border-radius: 8px;
+}
+.section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+.section h3 {
+    color: #003366;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.card .info {
+    padding: 1rem;
+}
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}

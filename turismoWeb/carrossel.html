@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel</title>
+    <link rel="stylesheet" href="css/carrossel.css">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slider{
+            margin: 0 auto;
+            width: 800px;
+            height: 400px;
+            overflow: hidden;
+        }
+
+        .slides{
+            width: 400%;
+            height: 400px;
+            display: flex;
+        }
+
+        .slides input{
+            display: none;
+        }
+
+        .slide{
+            width: 25%;
+            position: relative;
+        }
+
+        .slide img{
+            width: 800px;
+        }
+
+        .manual-navegation{
+            position: absolute;
+            width: 800px;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .manual.btn{
+            border: 2px solid #fff;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .manual.btn:not(:last-child){
+            margin: 40px;
+        }
+
+        .manual.btn:hover{
+            background-color: #fff;
+        }
+
+        #radio1:checked ~ .first{
+            margin-left: 0;
+        }
+
+        #radio2:checked ~ .first{
+            margin-left: -20%;
+        }
+
+        #radio3:checked ~ .first{
+            margin-left: -40%;
+        }
+
+        #radio4:checked ~ .first{
+            margin-left: -60%;
+        }
+
+        #radio5:checked ~ .first{
+            margin-left: -80%;
+        }
+
+        .navegation-auto div{
+            border: 2px solid #20a6ff;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .navegation-auto{
+            position: absolute;
+            width: 800px;
+            margin-top: 360px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navegation-auto div:not(:last-child){
+            margin-right: 40px;
+        }
+
+        #radio1:checked ~.navegation-auto .auto-btn1{
+            background-color: #fff;
+        }
+
+        #radio2:checked ~.navegation-auto .auto-btn2{
+            background-color: #fff;
+        }
+        #radio3:checked ~.navegation-auto .auto-btn3{
+            background-color: #fff;
+        }
+
+        #radio4:checked ~.navegation-auto .auto-btn4{
+            background-color: #fff;
+        }
+
+        #radio5:checked ~.navegation-auto .auto-btn5{
+            background-color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <input type="radio" name="radio-btn" id="radio5">
+            <!--Fim Radio Buttons-->
+
+            <!--Slides Images-->
+            <div class="slide 1">
+                <img src="img/Imagem1.PNG" alt="Imagem 1">
+            </div>
+            <div class="slide 2">
+                <img src="img/Imagem2.png" alt="Imagem 2">
+            </div>
+            <div class="slide 3">
+                <img src="img/Imagem4.png" alt="Imagem 3">
+            </div>
+            <div class="slide 4">
+                <img src="img/Imagem6.png" alt="Imagem 4">
+            </div>
+            <div class="slide 5">
+                <img src="img/Imagem7.PNG" alt="Imagem 5">
+            </div>
+            <!--Fim Slides Images-->
+
+            <!--Navegation auto-->
+            <div class="navegation">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            <!--Fim Navegation auto-->            
+        </div>
+
+        <div class="manual-navegation">
+            <label for="btn1" class="manual-btn"></label>
+            <label for="btn2" class="manual-btn"></label>
+            <label for="btn3" class="manual-btn"></label>
+            <label for="btn4" class="manual-btn"></label>
+            <label for="btn5" class="manual-btn"></label>
+        </div>
+
+    </div>
+
+    <script src="js/carrossel.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .banner {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Congresso_Nacional_-_Bras%C3%ADlia.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .banner h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.5);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section h3 {
+      color: #003366;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card .info {
+      padding: 1rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background: #003366;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Descubra Brasília</h1>
+    <nav>
+      <a href="#pontos">Pontos Turísticos</a>
+      <a href="#eventos">Cultura</a>
+      <a href="#gastronomia">Gastronomia</a>
+      <a href="#blog">Blog</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>A Capital do Brasil como você nunca viu!</h2>
+  </section>
+
+  <section id="pontos" class="section">
+    <h3>Pontos Turísticos</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Catedral_Brasilia.jpg" alt="Catedral de Brasília">
+        <div class="info">
+          <h4>Catedral Metropolitana</h4>
+          <p>Uma obra-prima de Niemeyer com arquitetura única e vitrais impressionantes.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fd/Memorial_Juscelino.jpg" alt="Memorial JK">
+        <div class="info">
+          <h4>Memorial JK</h4>
+          <p>Homenagem ao fundador de Brasília, com acervo histórico e exposições.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Palacio_Itamaraty.jpg" alt="Palácio Itamaraty">
+        <div class="info">
+          <h4>Palácio Itamaraty</h4>
+          <p>Beleza arquitetônica e jardins flutuantes em um dos centros diplomáticos do país.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="eventos" class="section">
+    <h3>Cultura e Eventos</h3>
+    <p>Brasília é palco de grandes eventos culturais como o Festival de Cinema, Feira do Livro e apresentações no CCBB.</p>
+  </section>
+
+  <section id="gastronomia" class="section">
+    <h3>Gastronomia</h3>
+    <p>Sabores do cerrado, pratos típicos como galinhada, pequi, pamonha e opções para todos os gostos.</p>
+  </section>
+
+  <section id="blog" class="section">
+    <h3>Blog de Notícias</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="info">
+          <h4>Festival de Inverno 2025</h4>
+          <p>O Festival de Inverno de Brasília traz shows, gastronomia e arte em julho.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h4>Nova exposição no CCBB</h4>
+          <p>Mostra de arte contemporânea reúne artistas nacionais e internacionais.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="info">
+          <h4>Feira do Livro movimenta o Eixo Cultural</h4>
+          <p>Evento reúne autores, leitores e editoras em diversas atrações gratuitas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h3>Fale Conosco</h3>
+    <form action="https://formsubmit.co/gislene.eat@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="nome" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Descubra Brasília | Siga-nos nas redes sociais</p>
+  </footer>
+</body>
+</html>
