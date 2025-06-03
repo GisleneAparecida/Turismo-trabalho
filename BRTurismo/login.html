@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #67a4f3ce;
+        }
+
+        .login-box {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 320px;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px; /* centraliza e adiciona espaço abaixo */
+            height: 100px;         /* ajuste conforme o tamanho da sua imagem */
+            width: auto;
+        }
+
+        .login-box h3 {
+            margin-bottom: 24px;
+        }
+
+        .login-box input[type="text"],
+        .login-box input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-box button:hover {
+            background-color: #0056b3;
+        }
+
+        .login-box .link {
+            margin-top: 12px;
+        }
+
+        .login-box .link a {
+            color: #007bff(207, 100%, 53%);
+            text-decoration: none;
+        }
+
+        .login-box .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <a href="#">
+        <img src="Imagens/logo2.png" alt="Logo do site" class="logo">
+    </a>
+
+    <h3>Registre-se e saiba mais sobre o turismo no Brasil</h3>
+   
+    <form action="/login" method="POST">
+        <input type="text" name="usuario" placeholder="Usuário" required>
+        <input type="password" name="senha" placeholder="Senha" required>
+        <button type="submit">Login</button>
+    </form>
+    <div class="link">
+        <a href="#">Esqueceu a senha?</a>
+    </div>
+    <div class="link">
+        <a href="cadastro.html">Cadastre-se</a>
+    </div>
+</div>
+
+</body>
+</html>
